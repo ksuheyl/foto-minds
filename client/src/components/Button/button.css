@@ -1,0 +1,47 @@
+.btn {
+    min-width: 6rem;
+    height: 2rem;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 0 0px 0.625rem #868181;
+    transition: 0.3s all ease-in-out;
+    overflow: hidden;
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+    font-size: 1.563rem;
+    margin-bottom: .5rem;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #21f33d;
+    transition: width 0.9s, height 0.9s;
+  }
+  
+  .btn:hover::before {
+    width: 30rem;
+    height: 30rem;
+  }
+  
+  .btn:hover {
+    color: black;
+    box-shadow: 0 0px 0.625rem #00ff2ad5;
+  }
+  
